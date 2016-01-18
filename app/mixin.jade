@@ -1,0 +1,20 @@
+mixin meta_tag(name,content)
+  meta(name=name content=content)
+mixin stylesheet_link_tag(src)
+  link(rel="stylesheet" href=src type="text/css" charset="utf-8" media="all")
+mixin javascript_include_tag(src)
+  script(src=src type="text/javascript" charset="utf-8")
+
+//- End navbar mixins
+//- panel
+mixin panel(type,title)
+  .panel(class="panel-#{type}")
+    .panel-heading
+      h3.panel-title= title
+    .panel-body
+      block
+
+//- panel-default
+mixin panel-default(title)
+  +panel("default",title)
+    block

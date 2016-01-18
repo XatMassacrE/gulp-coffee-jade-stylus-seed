@@ -1,0 +1,11 @@
+include ../mixin
+extends ../layout
+
+block stylesheet
+  +stylesheet_link_tag('css/layout.css')
+
+block body
+  body
+    p1 Success
+
+  +javascript_include_tag('js/layout.js')

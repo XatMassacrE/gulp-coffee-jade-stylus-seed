@@ -1,0 +1,7 @@
+{
+  "node_modules/bootstrap/fonts/*": "fonts",
+  "node_modules/font-awesome/fonts/*": "fonts",
+  "assets/font/*": "fonts",
+  "assets/favicon.ico": "",
+  "assets/favicon.png": ""
+}
